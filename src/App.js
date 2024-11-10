@@ -10,9 +10,9 @@ function App() {
 
 // below data will be obtained from an API. Taking static values for the screen development
 
-  const [price, setPrice] = React.useState('63,179.71');
-  const [currency, setCurrency] = React.useState("USD");
-  const [percentage, setPercentage] = React.useState("+ 2,161.42 (3.54%)");
+  const [price] = React.useState('63,179.71');
+  const [currency] = React.useState("USD");
+  const [percentage] = React.useState("+ 2,161.42 (3.54%)");
   const [position, setPosition] = React.useState(150)
 
   const roots = ["Summary", "Chart", "Statistics", "Analysis", "Settings"];
@@ -23,7 +23,7 @@ function App() {
     let number = parseFloat(price.replace(/,/g, ''));
     setPosition(Math.floor(number/420))
     console.log(position)
-  }, [price])
+  }, [price,position])
   
 
   return (
