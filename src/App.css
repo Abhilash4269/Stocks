@@ -1,38 +1,113 @@
 .App {
-  text-align: center;
+  padding: 61px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.priceBox {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.netChange{
+  color: #67BF6B;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 16px;
+}
+.country {
+  color: #bdbebf;
+  font-size: 27px;
+  font-weight: 600;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stockPrice {
+  color: #1A243A;
+  font-size: 70px;
+  line-height: 58px;
 }
+
+.box2{
+  display: flex;
+  font-size: 20px;
+  margin-top: 30px;
+  border-bottom: 1px solid #EFF1F3;
+  padding-bottom: 5px;
+}
+.section{
+  color: #6F7177;
+  margin-right: 36px;
+  padding-bottom: 5px;
+}
+.section:hover {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #4B40EE;
+  
+}
+
+.actions {
+  margin-top: 60px;
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 40px;
+}
+img{
+  margin-right: 7px;
+}
+.flscreen{
+  display: flex;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.actOne{
+  display: flex;
+  margin-right: 85px;
+}
+.actTwo{
+  display: flex;
+  margin-right: 150px;
+}
+
+.block{
+  width: 49px;
+  /* height: 33px; */
+  margin-left: 4px;
+  cursor: pointer;
+  color: #6F7177;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.block:hover{
+  color: aliceblue;
+  background-color: #4B40EE;
+}
+
+.volume{
+  position: absolute;
+  top: 303px;
+  left: 5px;
+}
+
+.graph{
+  position: relative;
+}
+
+.lines{
+  position: absolute;
+  top: 42px;
+  left: -42px;
+}
+
+.move{
+  position: absolute;
+  left:748px;
+  background-color: #4B40EE;
+  color: #e7e7e8;
+  padding-inline: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
