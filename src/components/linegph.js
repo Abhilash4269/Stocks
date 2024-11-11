@@ -6,12 +6,6 @@ import {
   markElementClasses,
 } from "@mui/x-charts/LineChart";
 
-const pData = [
-  2400, 1398, 9800, 3908, 4800, 3800, 4300, 2400, 1398, 9800, 3908, 4800, 3800,
-  4300, 0, 8000, 2400, 1398, 9800, 3908, 4800, 3800, 4300, 2400, 1398, 9800,
-  3908, 4800, 3800, 6300,
-];
-
 const xLabels = [
   "1990",
   "1991",
@@ -45,13 +39,13 @@ const xLabels = [
   "2019",
 ];
 
-export default function TinyLineChart({demo}) {
+export default function TinyLineChart({data }) {
   return (
     <div>
       <ChartContainer
         width={840}
         height={300}
-        series={[{ type: "line", data: pData }]}
+        series={[{ type: "line", data: data }]}
         xAxis={[{ scaleType: "point", data: xLabels }]}
         sx={{
           [`& .${lineElementClasses.root}`]: {
@@ -69,7 +63,6 @@ export default function TinyLineChart({demo}) {
       >
         <LinePlot />
       </ChartContainer>
-      {/* <div>{demo}</div> */}
     </div>
   );
 }
